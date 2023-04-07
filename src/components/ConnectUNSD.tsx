@@ -60,4 +60,4 @@ function ConnectMagic() {
   );
 }
 
-export default ConnectMagic;
+export default ConnectUNSD;
