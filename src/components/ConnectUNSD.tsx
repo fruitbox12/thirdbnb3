@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Magic } from "magic-sdk";
 import { Button } from "@chakra-ui/react";
+import type { MagicUserMetadata } from 'magic-sdk/types';
 
 const magic = new Magic("pk_live_47057EC7DC7D2202");
 
 function ConnectMagic() {
-  const [userMetadata, setUserMetadata] = useState<Magic.MagicUserMetadata | null>(null);
+  const [userMetadata, setUserMetadata] = useState<MagicUserMetadata | null>(null);
 
   async function connect() {
     try {
